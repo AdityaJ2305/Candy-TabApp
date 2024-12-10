@@ -33,8 +33,7 @@ class CollectionBasedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Collection"
-//        self.view.backgroundColor = .systemBackground
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .systemBackground
         setupUI()
     }
    

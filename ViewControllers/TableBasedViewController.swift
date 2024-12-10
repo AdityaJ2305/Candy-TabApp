@@ -17,7 +17,6 @@ class TableBasedViewController: UIViewController {
     private func setupUI() {
         self.navigationItem.title = "Table"
         self.view.addSubview(tableView)
-        self.view.backgroundColor = .white
 
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.topAnchor),
