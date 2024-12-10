@@ -5,7 +5,6 @@ class TabbarControllerVC: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUITabBar()
-        self.tabBar.backgroundColor = .systemBackground
     }
 
     private func configureUITabBar() {
@@ -18,8 +17,9 @@ class TabbarControllerVC: UITabBarController {
 
         let nav1 = UINavigationController(rootViewController: vc1)
         let nav2 = UINavigationController(rootViewController: vc2)
-
-        tabBar.tintColor = .label
+        
+        self.tabBar.backgroundColor = .systemBackground
+        self.tabBar.tintColor = .label
         self.viewControllers = [nav1, nav2]
     }
 }
